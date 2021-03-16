@@ -1,0 +1,13 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <title>News</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        {% for post in news_query %}
+        <a class="news_title" href="{% url 'news_details' post.slug %}"> {{ post.title }} </a>
+        {% endfor %}
+    </div>
+{% endblock %}

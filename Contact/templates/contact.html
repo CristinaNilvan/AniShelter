@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <title>Contact</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1 class="contact_title">Contact</h1>
+        <div>&nbsp;</div>
+
+        <form method="post">
+
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div>&nbsp;</div>
+
+            <button type="submit"> Trimite </button>
+        </form>
+    </div>
+{% endblock %}

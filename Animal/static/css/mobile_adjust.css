@@ -1,0 +1,42 @@
+
+@media (min-width: 700px) and (max-width: 800px)
+{
+
+    .wallpaper-title-introduction h1
+    {
+        margin-top: -80%;
+        font-size: 60px;
+    }
+
+    .extra-margin-top
+    {
+        margin-top: 50%;
+    }
+
+    .description-column
+    {
+        margin-top: 4%;
+        padding: 5%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+
+    .wallpaper-title-introduction h1
+    {
+        margin-top: -120%;
+        font-size: 50px;
+    }
+
+    .extra-margin-top
+    {
+        margin-top: 50%;
+    }
+
+    .description-column
+    {
+        margin-top: 10%;
+    }
+}

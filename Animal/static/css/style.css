@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.extra-margin-top
+{
+    margin-top: 28%;
+}
+
+.navbar
+{
+    opacity: 0.8;
+}
+
+.navbar .navbar-brand
+{
+    color: #0a0a0a;
+    transition: all 500ms ease;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 33px;
+}
+
+.navbar .navbar-brand:hover
+{
+    color: #20cc1b;
+    transition: all 500ms ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link
+{
+    color: #0a0a0a;
+    transition: all 500ms ease;
+    font-weight: 600;
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover
+{
+    color: #5d5d5d;
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+
+.wallpaper
+{
+    background-image: url("../imgs/index-wallpaper_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    height: 100vh;
+    filter: brightness(70%);
+}
+
+
+.wallpaper-title-introduction h1
+{
+    color: white;
+    text-align: center;
+    margin-top: -30%;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.description-column
+{
+
+    border: 1px #20cc1b solid;
+    border-radius: 5%;
+    padding: 10%;
+    transition: all 500ms ease;
+}
+
+.description-column i
+{
+    font-size: 60px;
+    transition: all 500ms ease;
+}
+
+.description-column:hover i
+{
+    color: #20cc1b;
+    transition: all 500ms ease;
+}
+
+.description-column:hover
+{
+    border: none;
+    box-shadow: 4px 4px 4px 4px #888888;
+    transition: all 500ms ease;
+}
+
+.description-column h1
+{
+    padding: 10%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.description-column p
+{
+    color: #666666;
+}
