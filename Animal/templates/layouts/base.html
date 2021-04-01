@@ -18,13 +18,59 @@
         {% endblock %}
     </head>
     <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="/">Ani Shelter</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'news' %}">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'newsletter' %}">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Log In</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+
         {% block body %}
 
         {% endblock %}
 
-        <div class="container" align="center">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Nilvan<b>Cristina</b> all rights reserved</p>
+       <div class="space">
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+       </div>
+
+        <div class="container-fluid" align="center">
+            <div class="copy_right">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Nilvan<b>Cristina</b> all rights reserved</p>
+                </div>
             </div>
         </div>
     </body>

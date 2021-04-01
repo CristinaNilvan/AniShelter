@@ -5,39 +5,6 @@
 {% endblock %}
 
 {% block body %}
-
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Ani Shelter</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-          </div>
-    </nav>
-
     <div class="wallpaper">
         <div>&nbsp;</div>
     </div>
@@ -91,23 +58,26 @@
         </div>
     </div>
 
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
+    <div class="breathing-space">
+
+    </div>
+
+    <div class="container-fluid" align="center">
+        <div class="row">
+            {% for animal in animal_query %}
+                <div class="col-lg-4">
+                    <div class="specific-animal">
+                        <img src="{{ animal.picture.url }}" alt="animal">
+                        <div>&nbsp;</div>
+                        <h1>{{ animal.name }}</h1>
+                        <div>&nbsp;</div>
+                        <p>{{ animal.story | slice:":50"}}</p>
+                        <a class="animal_name" href="{% url 'animal_list_details' animal.animal_slug %}"> Read more </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
 {% endblock %}
 

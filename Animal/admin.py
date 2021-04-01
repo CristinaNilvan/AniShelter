@@ -4,6 +4,7 @@ from .models import Animal, Vaccine
 
 class AnimalAdmin(admin.ModelAdmin):
     list_display = ('animal_id', 'name', 'gender', 'health_status', 'adoption_status')
+    prepopulated_fields = {'animal_slug': ('name',)}
 
 
 class VaccineAdmin(admin.ModelAdmin):

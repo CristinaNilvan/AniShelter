@@ -22,6 +22,7 @@ class Animal(models.Model):
     adoption_status = models.BooleanField(default=False)
     story = models.TextField(blank=False)
     picture = models.ImageField(upload_to="animals_pictures/", default="default.jpg")
+    animal_slug = models.SlugField(max_length=200, unique=True, blank=True)
 
     def __str__(self):
         return self.animal_id

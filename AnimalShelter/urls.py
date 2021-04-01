@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('Animal.urls')),
     path('', include('Newsletter.urls')),
     path('', include('Contact.urls')),
-    path('', include('News.urls'))
+    path('', include('News.urls')),
+    path('user/', include('django.contrib.auth.urls')),
 ]

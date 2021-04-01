@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <title>AnimalList</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid" align="center">
+        <div class="row">
+            {% for animal in animal_query %}
+                <div class="col-lg-4">
+                    <div class="specific-animal">
+                        <img src="{{ animal.picture.url }}" alt="animal">
+                        <div>&nbsp;</div>
+                        <h1>{{ animal.name }}</h1>
+                        <div>&nbsp;</div>
+                        <p>{{ animal.story | slice:":50"}}</p>
+                        <a class="animal_name" href="{% url 'animal_list_details' animal.animal_slug %}"> Read more </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
