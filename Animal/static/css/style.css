@@ -145,7 +145,7 @@
 
 .contact_content
 {
-    margin-top: 10%;
+    margin-top: 20%;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -175,7 +175,7 @@
 
 .newsletter_content
 {
-    margin-top: 30%;
+    margin-top: 15%;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -207,12 +207,31 @@
 {
     margin-top: 15%;
     font-family: 'Nunito', sans-serif;
+    width: auto;
 }
 
-input {
+input
+{
     width: 100%;
 }
 
-textarea {
+textarea
+{
     width: 100%;
 }
+
+.input input
+{
+    width: auto;
+}
+
+.background
+{
+    background-color: #77ff6b;
+}
+
+.contact_input input
+{
+    width: 100%;
+}
+

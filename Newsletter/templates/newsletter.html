@@ -5,27 +5,34 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container-fluid" align="center">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="newsletter_image">
+    <div class="background">
+        <div class="container-fluid" align="center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input">
+                        <div class="newsletter_content">
+                            <h1 class="newsletter_title">Newsletter</h1>
+                            <div>&nbsp;</div>
 
-                </div>
-            </div>
+                            <form method="post">
 
-            <div class="col-lg-6">
-                <div class="newsletter_content">
-                    <h1 class="newsletter_title">Newsletter</h1>
-                    <div>&nbsp;</div>
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <div>&nbsp;</div>
 
-                    <form method="post">
+                                <button type="submit" class="btn btn-success"> Trimite </button>
+                            </form>
+                         </div>
 
-                        {% csrf_token %}
-                        {{ form.as_p }}
                         <div>&nbsp;</div>
-
-                        <button type="submit" class="btn btn-success"> Trimite </button>
-                    </form>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                    </div>
                 </div>
             </div>
         </div>
