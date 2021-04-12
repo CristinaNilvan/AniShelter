@@ -107,6 +107,11 @@
     padding: 5%;
 }
 
+.check_out_message
+{
+   font-family: 'Nunito', sans-serif;
+}
+
 
 .specific-animal
 {
@@ -143,12 +148,6 @@
 }
 
 
-.contact_content
-{
-    margin-top: 20%;
-    font-family: 'Nunito', sans-serif;
-}
-
 .contact_image
 {
     background-image: url("../imgs/contact-image-2.jpeg");
@@ -172,12 +171,6 @@
     font-family: 'Nunito', sans-serif;
 }
 
-
-.newsletter_content
-{
-    margin-top: 15%;
-    font-family: 'Nunito', sans-serif;
-}
 
 .newsletter_image
 {
@@ -203,12 +196,56 @@
 }
 
 
-.log_in_content
+.new_post
 {
-    margin-top: 15%;
+    margin-top: 10%;
+    border: 1px #20cc1b solid;
+    border-radius: 5%;
+    padding: 10%;
+    transition: all 500ms ease;
     font-family: 'Nunito', sans-serif;
-    width: auto;
 }
+
+.new_post:hover
+{
+    border: none;
+    box-shadow: 4px 4px 4px 4px #888888;
+    transition: all 500ms ease;
+    background: whitesmoke;
+}
+
+.new_post img
+{
+    width: 50%;
+}
+
+
+.news_details
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+.news_details img
+{
+    width: 50%;
+}
+
+
+.form_content
+{
+    margin-top: 10%;
+    font-family: 'Nunito', sans-serif;
+    background: white;
+    width: 60%;
+    padding: 4%;
+    border-radius: 3%;
+}
+
+.form_content form
+{
+    width: 40%;
+}
+
 
 input
 {
@@ -220,18 +257,8 @@ textarea
     width: 100%;
 }
 
-.input input
-{
-    width: auto;
-}
-
 .background
 {
     background-color: #77ff6b;
-}
-
-.contact_input input
-{
-    width: 100%;
 }
 

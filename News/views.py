@@ -15,6 +15,9 @@ class PostNewsDetails(generic.DetailView):
 
     template_name = 'news_details.html'
 
+    slug_field = "news_slug"
+    slug_url_kwarg = "news_slug"
+
 
 
 

@@ -14,7 +14,7 @@ class News(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     cover_picture = models.ImageField(upload_to="news_pictures/", default="default.jpg")
     background_picture = models.ImageField(upload_to="news_pictures/", default="default.jpg")
-    slug = models.SlugField(max_length=200, unique=True)
+    news_slug = models.SlugField(max_length=200, unique=True)
 
     class Meta:
         ordering = ['-date']

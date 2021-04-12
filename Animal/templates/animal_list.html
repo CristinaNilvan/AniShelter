@@ -15,7 +15,7 @@
                         <h1>{{ animal.name }}</h1>
                         <div>&nbsp;</div>
                         <p>{{ animal.story | slice:":50"}}</p>
-                        <a class="animal_name" href="{% url 'animal_list_details' animal.animal_slug %}"> Read more </a>
+                        <a href="{% url 'animal_list_details' animal.animal_slug %}"> Read more </a>
                     </div>
                 </div>
             {% endfor %}

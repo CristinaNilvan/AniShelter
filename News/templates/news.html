@@ -5,9 +5,20 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container-fluid">
-        {% for post in news_query %}
-        <a class="news_title" href="{% url 'news_details' post.slug %}"> {{ post.title }} </a>
-        {% endfor %}
+    <div class="container-fluid" align="center">
+        <div class="row">
+            {% for post in news_query %}
+                <div class="col-lg-4">
+                    <div class="new_post">
+                        <img src="{{ post.cover_picture.url }}" alt="post">
+                        <div>&nbsp;</div>
+                        <h1>{{ post.title }}</h1>
+                        <div>&nbsp;</div>
+                        <p>{{ post.content | slice:":50"}}</p>
+                        <a href="{% url 'news_details' post.news_slug %}"> Read more </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
